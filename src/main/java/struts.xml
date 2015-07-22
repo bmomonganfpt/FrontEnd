@@ -9,4 +9,10 @@
 			<result name="success">/hello.jsp</result>
 		</action>
 	</package>
+	
+	<package name="add" extends="struts-default">
+		<action name="add" class="vn.com.fpt.actions.AddAction">
+			<result name="add">/add.jsp</result>
+		</action>
+	</package>
 </struts>
