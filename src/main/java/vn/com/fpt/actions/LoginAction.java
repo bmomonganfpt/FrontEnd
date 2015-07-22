@@ -4,6 +4,9 @@ import com.opensymphony.xwork2.ActionSupport;
 
 import vn.com.fpt.authServ.AuthenticationService;
 import vn.com.fpt.authServ.AuthenticationServiceImplService;
+import vn.com.fpt.biddingEngine.BidService;
+import vn.com.fpt.biddingEngine.BidWs;
+import vn.com.fpt.biddingEngine.Item;
 
 public class LoginAction extends ActionSupport {
 
@@ -34,7 +37,11 @@ public class LoginAction extends ActionSupport {
 		AuthenticationService authServ = authImplServ.getAuthenticationServiceImplPort();
 		System.out.println(authServ.getAuthentication());
 
+		BidService bidService = new BidService();
+		BidWs bidWs = bidService.getBidWsPort();
+
+		Item foundItem = bidWs.getItemDemo(null);
+		System.out.println(foundItem.getItemName());
 		return SUCCESS;
 	}
-
 }
