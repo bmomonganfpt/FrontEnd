@@ -15,4 +15,15 @@
 			<result name="add">/add.jsp</result>
 		</action>
 	</package>
+	
+	<package name="failed" extends="struts-default">
+		<action name="failed" class="vn.com.fpt.actions.NewItemFailedAction">
+			<result name="failed">/fAdd.jsp</result>
+		</action>
+	</package>
+	<package name="Item" extends="struts-default">
+		<action name="Item" class="vn.com.fpt.actions.ViewItemAction">
+			<result name="Item">/viewItem.jsp</result>
+		</action>
+	</package>
 </struts>
