@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="/struts-tags" prefix="s" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,20 +8,24 @@
 <title>Add Page</title>
 </head>
 <body>
-	<form action="/ItemWS/add" method="post">
+	<s:form action="/item">
 		<table>
 			<tr>
-				<td>Id:</td>
-				<td><input type="text" id="id" name="id" /></td>
+				<td>Product Name:<s:textfield name="itemName" /></td>
 			</tr>
 			<tr>
-				<td>Email:</td>
-				<td><input type="text" id="email" name="email"/></td>
+				<td>Product Description:</td>
+				<td><s:textfield name="itemDesc" /></td>
 			</tr>
 			<tr>
-				<td><input type="submit" value="New Item" /></td>
+				<td>Initial Price:</td>
+				<td><s:textfield name="itemInitPrice" /></td>
+			</tr>
+			<tr>
+				<td><s:submit value="New Item" /></td>
 			</tr>
 		</table>
-	</form>
+	</s:form>	
+	
 </body>
 </html>

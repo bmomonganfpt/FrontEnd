@@ -10,9 +10,15 @@
 		</action>
 	</package>
 	
-	<package name="add" extends="struts-default">
-		<action name="add" class="vn.com.fpt.actions.AddAction">
-			<result name="add">/add.jsp</result>
+	<package name="addGet" extends="struts-default">
+		<action name="addGet" class="vn.com.fpt.actions.AddGetAction">
+			<result name="addGet">/add.jsp</result>
+		</action>
+	</package>
+	
+	<package name="item" extends="struts-default">
+		<action name="item" class="vn.com.fpt.actions.ViewItemAction">
+			<result name="item">/viewItem.jsp</result>
 		</action>
 	</package>
 	
@@ -20,10 +26,5 @@
 		<action name="failed" class="vn.com.fpt.actions.NewItemFailedAction">
 			<result name="failed">/fAdd.jsp</result>
 		</action>
-	</package>
-	<package name="Item" extends="struts-default">
-		<action name="Item" class="vn.com.fpt.actions.ViewItemAction">
-			<result name="Item">/viewItem.jsp</result>
-		</action>
-	</package>
+	</package>	
 </struts>
