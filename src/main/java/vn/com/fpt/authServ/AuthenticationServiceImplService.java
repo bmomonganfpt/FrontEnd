@@ -18,7 +18,7 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "AuthenticationServiceImplService", targetNamespace = "http://endpoints.fpt.com.vn/", wsdlLocation = "http://localhost:7662/AuthServ/authenticate?wsdl")
+@WebServiceClient(name = "AuthenticationServiceImplService", targetNamespace = "http://endpoints.fpt.com.vn/", wsdlLocation = "http://localhost:8585/AuthServ/authenticate?wsdl")
 public class AuthenticationServiceImplService
     extends Service
 {
@@ -31,7 +31,7 @@ public class AuthenticationServiceImplService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:7662/AuthServ/authenticate?wsdl");
+            url = new URL("http://localhost:8585/AuthServ/authenticate?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

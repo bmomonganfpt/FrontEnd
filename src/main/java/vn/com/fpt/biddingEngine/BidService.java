@@ -30,7 +30,7 @@ public class BidService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/EJBproduct/bidService/BidWs?wsdl");
+            url = new URL("http://localhost:8180/EJBproduct/bidService/BidWs?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

@@ -23,6 +23,6 @@ public class LoginAction extends ActionSupport {
 
 		Item foundItem = bidWs.getItemDemo(null);
 		System.out.println(foundItem.getItemName());
-		return SUCCESS;
+		return "home";
 	}
 }

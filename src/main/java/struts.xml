@@ -5,8 +5,8 @@
 
 <struts>
 	<package name="main" extends="struts-default">
-		<action name="login" class="vn.com.fpt.actions.LoginAction">
-			<result name="success">/hello.jsp</result>
+		<action name="home" class="vn.com.fpt.actions.LoginAction">
+			<result name="home">/home.jsp</result>
 		</action>
 	</package>
 	
