@@ -9,7 +9,7 @@
 <script src="jquery-2.1.4.min.js"></script>
 <script>
 	function doSearch() {
-		$.get("/ItemWS/all", 
+		$.post("/ItemWS/all", 
 				
 			function(data) {
 			$('#result').text('');

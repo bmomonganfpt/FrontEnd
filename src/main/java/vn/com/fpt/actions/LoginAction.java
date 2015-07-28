@@ -17,12 +17,6 @@ public class LoginAction extends ActionSupport {
 		AuthenticationServiceImplService authImplServ = new AuthenticationServiceImplService();
 		AuthenticationService authServ = authImplServ.getAuthenticationServiceImplPort();
 		System.out.println(authServ.getAuthentication());
-
-		BidService bidService = new BidService();
-		BidWs bidWs = bidService.getBidWsPort();
-
-		Item foundItem = bidWs.getItemDemo(null);
-		System.out.println(foundItem.getItemName());
 		return "home";
 	}
 }
